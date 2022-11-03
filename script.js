@@ -1,6 +1,6 @@
 // Complete project details: https://randomnerdtutorials.com/esp8266-nodemcu-web-server-websocket-sliders/
 
-var gateway = `ws://${window.location.hostname}/ws`;
+var gateway = `ws://${192.168.1.22}/ws`;
 var websocket;
 window.addEventListener('load', onload);
 
