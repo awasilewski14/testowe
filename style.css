@@ -1,0 +1,82 @@
+/*  Complete project details: https://randomnerdtutorials.com/esp8266-nodemcu-web-server-websocket-sliders/  */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+h1 {
+  font-size: 1.8rem;
+  color: white;
+}
+p {
+  font-size: 1.4rem;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0a1128;
+  height: 70px;
+}
+body {
+  margin: 0;
+}
+
+.card-grid {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 12px 1px rgba(140, 140, 140, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:nth-child(2) {
+  height: 60%;
+  align-self: end;
+}
+
+.card:first-of-type input, .card:last-of-type input {
+  transform: rotate(-90deg);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #034078;
+  display: block;
+}
+.state {
+  font-size: 1.2rem;
+  color: #1282a2;
+}
+.slider {
+  -webkit-appearance: none;
+  margin: 0 auto;
+  height: 15px;
+  border-radius: 10px;
+  background: #ffd65c;
+  outline: none;
+  display: block;
+  width: 180px;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #034078;
+  cursor: pointer;
+}
+.slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #034078;
+  cursor: pointer;
+}
